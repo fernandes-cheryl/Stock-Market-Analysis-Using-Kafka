@@ -15,10 +15,10 @@ This project simulates stock market data and uses Kafka to process data in real 
 ## Tech Stack
 1. Python  
 2. Amazon Web Service(AWS)  
-  * S3  
-  * Athena  
-  * Glue Crawler  
-  * EC2  
+ * S3  
+ * Athena  
+ * Glue Crawler  
+ * EC2  
 3. Apache Kafka
 
 ## IDE:
@@ -27,5 +27,15 @@ Jupyter Notebook
 ## Dataset Used:
 Stock data for Infosys Limited:  
 https://finance.yahoo.com/quote/INFY/history?p=INFY
+
+## Process:
+1. Create an EC2 instance and connect to it.
+2. Follow commands on [command.txt](https://github.com/fernandes-cheryl/Stock-Market-Analysis-Using-Kafka/blob/main/commands.txt) to install Apache Kafka on the EC2 instance.
+3. Simulate stock market data by sampling one DataFrame at a time.
+4. Use producer to send data to the topic and onto the consumer.
+5. Send data from consumer to S3 bucket.
+6. Configure AWS CLI to send local data from the machine to S3.
+7. Use Glue crawler to create a catalog over the S3 bucket.
+8. Use AWS Athena to query over the data.
 
 
