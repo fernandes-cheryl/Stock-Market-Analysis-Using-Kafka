@@ -19,8 +19,13 @@ This project simulates stock market data and uses Kafka to process data in real 
   * Athena  
   * Glue Crawler  
   * EC2  
-3. Apache Kafka  
+3. Apache Kafka
+
+## IDE:
+Jupyter Notebook
 
 ## Dataset Used:
 Stock data for Infosys Limited:  
 https://finance.yahoo.com/quote/INFY/history?p=INFY
+
+
